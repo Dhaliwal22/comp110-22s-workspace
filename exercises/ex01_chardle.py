@@ -16,7 +16,6 @@ if isfive is True:
     l_length = len(letter)
     if l_length > 1:
         print("Error: Character must be a single character.")
-        exit()
     else:
         print("Searching for " + letter + " in " + word)  
 
@@ -62,8 +61,7 @@ if isfive is True:
 
     if (count == 1):
         print(str(count) + " instance of " + letter + " in " + word)
-        exit()
-
+        
     if (count > 1):
         print(str(count) + " instances of " + letter + " in " + word)
     else:
