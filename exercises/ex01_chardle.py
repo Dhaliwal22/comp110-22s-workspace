@@ -23,35 +23,35 @@ instances = int(index)
 
 count: int = 0
 
-if letter == word[0]:
+if letter is word[0]:
     print(letter + " found at index " + str(index))
     count = count + 1
     index = index + 1     
 else:
     index = index + 1
 
-if letter == word[1]:
+if letter is word[1]:
     print(letter + " found at index " + str(index))
     count = count + 1
     index = index + 1     
 else:
     index = index + 1
 
-if letter == word[2]:
+if letter is word[2]:
     print(letter + " found at index " + str(index))
     count = count + 1
     index = index + 1     
 else:
     index = index + 1
 
-if letter == word[3]:
+if letter is word[3]:
     print(letter + " found at index " + str(index))
     count = count + 1
     index = index + 1     
 else:
     index = index + 1
 
-if letter == word[4]:
+if letter is word[4]:
     print(letter + " found at index " + str(index))
     count = count + 1
     index = index + 1     
