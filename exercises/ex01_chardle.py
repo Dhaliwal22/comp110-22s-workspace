@@ -60,9 +60,9 @@ if isfive is True:
         index = index + 1
 
     if (count == 1):
-        print(str(count) + " instance of " + letter + " in " + word)
+        print(str(count) + " instance of " + letter + " found in " + word)
         
     if (count > 1):
-        print(str(count) + " instances of " + letter + " in " + word)
+        print(str(count) + " instances of " + letter + " found in " + word)
     else:
         print("No instances of " + letter + " found in " + word)
