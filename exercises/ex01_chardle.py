@@ -13,7 +13,7 @@ if length != 5:
 
 letter: str = str(input("Enter a single character: "))
 l_length = len(letter)
-if l_length > 1:
+if l_length != 1:
     print("Error: Character must be a single character.")
     exit()
 else:
