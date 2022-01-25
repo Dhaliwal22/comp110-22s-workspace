@@ -1,4 +1,4 @@
-"""EX01 - Chardle - A cute step towards wordle"""
+"""EX01 - Chardle - A cute step towards wordle."""
 
 __author__ = "730467923"
  
@@ -7,7 +7,7 @@ word: str = str(input("Enter a 5-character word: "))
 length = len(word)
 
 if length != 5:
-    print("Error: Word must contain 5 characters")
+    print("Error: Word must contain 5-characters")
     exit()
 
 letter: str = str(input("Enter a single character: "))
@@ -58,7 +58,11 @@ if letter == word[4]:
 else:
     index = index + 1
 
-if (count > 0):
+if (count == 1):
+    print(str(count) + " instance of " + letter + " in " + word)
+    exit()
+
+if (count > 1):
     print(str(count) + " instances of " + letter + " in " + word)
 else:
-    print("no instances of " + letter + " found in " + word)
+    print("No instances of " + letter + " found in " + word)
