@@ -62,6 +62,9 @@ if (count == 1):
     print(str(count) + " instance of " + letter + " in " + word)
     exit()
 
+if (count == 1):
+    print(str(count) + " instance of " + letter + " in " + word)
+
 if (count > 1):
     print(str(count) + " instances of " + letter + " in " + word)
 else:
