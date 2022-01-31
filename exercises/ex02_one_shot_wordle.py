@@ -3,10 +3,10 @@
 __author__ = "730467923"
 
 secret: str = "python"
-wordle: str = input("What is your 6-letter guess? ")
+word: str = input("What is your 6-letter guess? ")
 
-while len(wordle) != 6: 
-    wordle = input("That was not 6 letters! Try again: ")
+while len(word) != 6: 
+    word = input("That was not 6 letters! Try again: ")
 
 
 WHITE_BOX: str = "\U00002B1C"
@@ -16,17 +16,17 @@ count: int = 0
 second_count: int = 0
 
 output: str = ""
-while count < len(wordle):
+while count < len(word):
     second_count = 0
-    if wordle[count] is secret[count]:
+    if word[count] is secret[count]:
         output += GREEN_BOX
     else:
         exists: bool = False
-        while second_count < len(wordle):
-            if wordle[second_count] is secret[count]:
+        while second_count < len(word):
+            if word[second_count] is secret[count]:
                 output += YELLOW_BOX
                 exists = True
-                second_count = len(wordle) + 5
+                second_count = len(word) + 5
             second_count += 1
             
         if exists is False:
@@ -34,7 +34,7 @@ while count < len(wordle):
     count += 1
 
 print(output)
-if wordle == secret:
+if word == secret:
     print("Woo! You got it!")
 else:
     print("Not quite. Play again soon!")
